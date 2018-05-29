@@ -1,4 +1,4 @@
-gtk-color-scheme = "selected_bg_color:#2A91FA\nselected_fg_color:#ffffff"
+gtk-color-scheme = "selected_bg_color:#AF59FC\nselected_fg_color:#ffffff"
 
 style "notify-window" {
   XfceNotifyWindow::summary-bold = 1
@@ -8,12 +8,12 @@ style "notify-window" {
   XfceNotifyWindow::border-width = 1.0
   XfceNotifyWindow::border-width-hover = 1.0
 
-  bg[NORMAL] = "#292C36"
+  bg[NORMAL] = "#1E2033"
 }
 
 style "notify-button" {
-  bg[NORMAL] = "#2C333D"
-  bg[PRELIGHT] = "#5C6070"
+  bg[NORMAL] = "#272742"
+  bg[PRELIGHT] = "#2D2D48"
   bg[ACTIVE] = @selected_bg_color
 
   fg[NORMAL] = "#d3dae3"

@@ -23,7 +23,7 @@
        id="linearGradient2627"
        osb:paint="solid">
       <stop
-         style="stop-color:#333a47;stop-opacity:1;"
+         style="stop-color:#272742;stop-opacity:1;"
          offset="0"
          id="stop2625" />
     </linearGradient>
@@ -71,7 +71,7 @@
        id="selected_bg_color"
        osb:paint="solid">
       <stop
-         style="stop-color:#2A91FA;stop-opacity:1;"
+         style="stop-color:#af59fc;stop-opacity:1;"
          offset="0"
          id="stop5016" />
     </linearGradient>
@@ -1635,9 +1635,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.8456083"
-     inkscape:cx="103.73314"
-     inkscape:cy="156.77722"
+     inkscape:zoom="2.0853184"
+     inkscape:cx="310.07067"
+     inkscape:cy="202.40666"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -3360,7 +3360,7 @@
          id="button-active-5"
          style="display:inline">
         <rect
-           style="opacity:1;fill:url(#linearGradient2217);fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;font-variant-east_asian:normal;vector-effect:none"
+           style="opacity:1;vector-effect:none;fill:url(#linearGradient2217);fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
            id="rect7903-21-5"
            width="22"
            height="21.999998"
