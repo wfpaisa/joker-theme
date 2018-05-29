@@ -2,15 +2,15 @@
 // it gets @if ed depending on $variant
 
 
-$base_color: if($variant == 'light', rgba(252, 252, 252, 0.999), rgba(45, 52, 65, 0.999)); // #FCFCFC , #2C333D
-$text_color: if($variant == 'light', rgb(82,87,98), rgb(230, 230, 230)); //#525762, #E6E6E6
-$bg_color: if($variant == 'light', rgba(238, 239, 240, 0.999), rgba(51, 58, 71, 0.999)); //#EEEFF0, #333A47
-$fg_color: if($variant == 'light', rgb(82,87,98), rgb(240, 240, 240)); // #525762, #F0F0F0
+$base_color: if($variant == 'light', rgba(252, 252, 252, 0.999), rgba(30, 32, 51, 0.999)); // #FCFCFC , #1E2033
+$text_color: if($variant == 'light', rgb(82,87,98), #9A97C2); //#525762, #E6E6E6
+$bg_color: if($variant == 'light', rgba(238, 239, 240, 0.999), rgba(39, 39, 66,0.999)); //#EEEFF0, #272742
+$fg_color: if($variant == 'light', rgb(82,87,98), #8F8CB5); // #525762, #F0F0F0
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: if($variant == 'light', rgb(42, 145, 250), rgb(42, 145, 250)); //#2A91FA
+$selected_bg_color: if($variant == 'light', rgb(175, 89, 252), rgb(175, 89, 252)); //#af59fc
 $selected_borders_color: if($variant== 'light', darken($selected_bg_color, 30%), darken($selected_bg_color, 20%));
-$borders_color: if($variant == 'light', darken($bg_color, 12%), darken($bg_color, 10%));
+$borders_color: if($variant == 'light', darken($bg_color, 12%), darken($bg_color, 6%));
 $alt_borders_color: if($variant == 'light', darken($bg_color, 35%), darken($bg_color, 17%));
 $borders_edge: if($variant == 'light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
 $link_color: if($variant == 'light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 20%));
@@ -68,14 +68,16 @@ $backdrop_scrollbar_slider_color: mix($backdrop_fg_color, $backdrop_bg_color, 40
 
 $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdrop_bg_color, $backdrop_base_color, 20%));
 
-$switch_bg_color: #2AC558;
+$switch_bg_color: #66E26C;
 $switch_fg_color: #FFF;
 
-$check_bg_color: #2AC558;
+$check_bg_color: #66E26C;
 $check_fg_color: #FFF;
 
 $indeterminate_bg_color: #FFC03A;
 $indeterminate_fg_color: #FFF;
 
-$scale_color_a: mix($selected_bg_color, #023EFE, 40%);
-$scale_color_b: mix($selected_bg_color, #00FAFF, 40%);
+$scale_color_a: mix($selected_bg_color, #023EFE, 90%);
+$scale_color_b: mix($selected_bg_color, #00FAFF, 60%);
+
+$side_and_list: #A135D6;

@@ -1,9 +1,10 @@
 // Drawing mixins
-$br-o: 2px; // Out, Top --General-- (default:7px)
+$br-h: 14px; // Out, Top --General-- (default:7px)
+$br-o: 1px; // Out, Top --General-- (default:7px)
 $br-i: 1px; // In, Outline (default:5px)
-$br-c: 3px; // better antialiasing (default:9px)
-$br-b: 2px; // bottom windows  (default:0px)
-$br-e: 2px; // buttons and widgets, (default:3px)
+$br-c: 1px; // better antialiasing (default:9px)
+$br-b: 1px; // bottom windows  (default:0px)
+$br-e: 18px; // buttons and widgets, (default:3px)
 
 // generic drawing of more complex things
 
@@ -483,12 +484,13 @@ $br-e: 2px; // buttons and widgets, (default:3px)
 //
   $gradient: linear-gradient(to top, darken($c, 13%), darken($c, 2%) 2px, $c 3px);
 
-  @if $variant == 'dark' { $gradient: linear-gradient(to top, darken($c, 3%), darken($c, 1%) 2px, $c 3px); }
+  // @if $variant == 'dark' { $gradient: linear-gradient(to top, darken($c, 3%), darken($c, 1%) 2px, $c 3px); }
+  @if $variant == 'dark' { $gradient: linear-gradient(to top, $c, $c); }
 
-  @if $ov != none { background: $c $ov, $gradient; }
-  @else { background: $c $gradient; }
+  @if $ov != none { background: $c $ov; }
+  @else { background: $c; }
   
-  box-shadow: inset 1px 1px lighten($bg_color, 4%),inset -1px 0px lighten($bg_color, 4%); // top highlight
+  // box-shadow: inset 1px 1px lighten($bg_color, 4%),inset -1px 0px lighten($bg_color, 4%); // top highlight
 }
 
 @mixin overshoot($p, $t:normal, $c:$fg_color) {

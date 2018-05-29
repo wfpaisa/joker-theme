@@ -1450,9 +1450,9 @@ headerbar {
   min-height: 46px;
   border-width: 0;
   border-radius: 0;
-  border-bottom:1px solid lighten($bg_color, 4%);
+  // border-bottom:1px solid lighten($bg_color, 4%);
   
-  @include headerbar_fill(transparentize($bg_color,0.24));
+  @include headerbar_fill(lighten($bg_color,0%));
 
   &:backdrop {
     border-color: transparent;
@@ -1652,8 +1652,8 @@ headerbar {
 
 .background .titlebar {
   &:backdrop, & {
-    border-top-left-radius: $br-o;
-    border-top-right-radius: $br-o;
+    border-top-left-radius: $br-h;
+    border-top-right-radius: $br-h;
   }
 }
 
@@ -1673,8 +1673,8 @@ headerbar {
 headerbar { // headerbar border rounding
 
   window separator:first-child + &,
-  window &:first-child { &:backdrop, & { border-top-left-radius: $br-o; }}
-  window &:last-child { &:backdrop, & { border-top-right-radius: $br-o; }}
+  window &:first-child { &:backdrop, & { border-top-left-radius: $br-h; }}
+  window &:last-child { &:backdrop, & { border-top-right-radius: $br-h; }}
 
   window stack & { // tackles the stacked headerbars case
     &:first-child, &:last-child {
@@ -2815,7 +2815,8 @@ radio {
 
 %check,
 check {
-  border-radius: $br-e;
+  border-radius: 1px;
+
 
   &:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")),
                                       -gtk-recolor(url("assets/check-symbolic.symbolic.png"))); }
@@ -2828,6 +2829,7 @@ check {
 radio {
   border-radius: 100%;
 
+  
   &:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")),
                                       -gtk-recolor(url("assets/bullet-symbolic.symbolic.png"))); }
 
@@ -2883,8 +2885,8 @@ treeview.view radio {
   // &:backdrop { &:selected, & { color: $backdrop_fg_color; }}
 }
 
+treeview.view check:selected { &:focus, & { @extend %check; }} // This is a workaround
 treeview.view radio:selected { &:focus, & { @extend %radio; }} // This is a workaround
-
 
 /************
  * GtkScale *
@@ -4240,7 +4242,7 @@ colorchooser .popover.osd { border-radius: $br-e; }
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: $br-o $br-o $br-b $br-b;
+  border-radius: $br-h $br-h $br-b $br-b;
   // lamefun trick to get rounded borders regardless of CSD use
   border-width: 0px;
 
@@ -4294,7 +4296,7 @@ decoration {
   }
 
   messagedialog.csd & {
-    border-radius: $br-o;
+    border-radius: $br-h $br-h $br-b $br-b;
       box-shadow:   0px 0px 12px 0px rgba(0,0,0,0.1),
                 0px 0px 4px 0px rgba(0,0,0,0.4),
                 0px 0px 0px 1px rgba(0,0,0,0.1);
@@ -4351,6 +4353,7 @@ headerbar.selection-mode button.titlebutton,
 
   @at-root %nobg_selected_items, & {
     color: $selected_fg_color;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.4);
 
     &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
 
