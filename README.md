@@ -3,13 +3,12 @@
 </p>
 
 
-# PLANE THEME
+# JOKER THEME
 
--- Beta --
 
 - 	A beautiful theme for Gnome Linux
 
-<p align="center">
+<!-- <p align="center">
 <img src="assets/screenshots/screenshot-01.png" />
 <br>
 <img src="assets/screenshots/screenshot-02.png" />
@@ -17,7 +16,7 @@
 <img src="assets/screenshots/screenshot-03.png" />
 <br>
 <img src="assets/screenshots/screenshot-04.png" />
-</p>
+</p> -->
 
 ## Build
 - npm i
