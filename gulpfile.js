@@ -1,5 +1,5 @@
 /**
- * 	Plane theme
+ * 	Joker theme
  *	Copyright (C) 2017  wfpaisa
  *
  *	This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
  *	along with this program.  If not, see <https://www.gnu.org/licenses/gpl-3.0.en.html>.
  *
  * @author    @wfpaisa
- * @copyright 2017 Plane theme
+ * @copyright 2017 Joker theme
  */
 
 "use strict";
@@ -38,8 +38,8 @@ var fs = require('fs'),
 
 
 /* Global variables */
-var dirLight = 'Plane';
-var dirDark = 'Plane-dark';
+var dirLight = 'Joker';
+var dirDark = 'Joker-dark';
 
 
 /*========================================
@@ -309,7 +309,7 @@ gulp.task('zip-dark', function(){
 
 /**
  *
- * Generate Plane and Plane-dark theme
+ * Generate Joker and Joker-dark theme
  *
  */
 
